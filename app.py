@@ -77,7 +77,7 @@ def main():
             st.success(f"The uploaded image is of the {label} with {p:.2f} % probability.") 
 
     elif option == "Run Example Image":
-      image = Image.open('demo_cbsd.png')
+      image = Image.open('demo_cbsd.jpg')
       p, idx = inference(image, model)
       label = idx2label[idx]
       st.image(image)
